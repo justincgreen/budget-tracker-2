@@ -1,5 +1,8 @@
 import './App.css'
 
+// SCSS styles
+import './styles/styles.js';
+
 function App() {
   return (
     <div className="App">
