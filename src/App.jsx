@@ -8,7 +8,6 @@ function App() {
   return (
     <div className="App">
       <Header />
-      <h1>Budget Tracker 2</h1>      
     </div>
   )
 }
