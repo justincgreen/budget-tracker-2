@@ -1,51 +1,109 @@
 // Header 
 .c-header {
-	background-color: $c-blue;
-	background-image: linear-gradient(#16c4fe, #119ff3);
-	padding: 2em 2em 5em 2em;
 	position: relative;
+	
+	&__upper {
+		background-color: $c-blue;
+		background-image: linear-gradient(#16c4fe, #119ff3);
+		padding: 2em 2em 5em 2em;
+	}
 	
 	h1 {
 		color: $t-white;
 		text-align: center;
 	}
 	
-	&__balance-area {
-		width: 80%;
-		margin: 0 auto;
+	&__balance-blocks {
+		display: flex;
+		justify-content: center;
+		gap: 2em;
+		margin-top: -55px;
+		
+		
+		@media(max-width: $bp-small) {
+			display: block;
+			margin: -40px 20px 0 20px;
+		}
+	}
+	
+	&__balance-block {
+		display: block;
+		height: 150px;
 		border-radius: 10px;
-		padding: 1em;
+		padding: 2em 1em 0 1em;
 		background-color: #fff;
 		color: $c-black;
-		position: absolute;
-		bottom: -8em;
-		left: 0;
-		right: 0;
+		
+		@media(max-width: $bp-small) {
+			height: auto;
+			padding: 1em;
+			margin-bottom: 10px;
+			
+			&:last-of-type {
+				margin-bottom: 0;
+			}
+		}
 	}
 	
-	&__balance-current-label {
-		text-align: center;
+	&__balance-block-label {
 		font-size: $font-size-sm;
 		font-weight: 300;
+		
+		@media(max-width: $bp-small) {
+			font-size: $font-size-xs;
+		}
 	}
 	
-	&__balance-current-title {
-		text-align: center;
+	&__balance-block-title {
 		font-size: $font-size-xl;
 		font-weight: 300;
+		
+		@media(max-width: $bp-small) {
+			font-size: $font-size-md;
+		}
 	}
 	
-	&__balance-secondary {
-		display: flex;
-		justify-content: space-around;
-	}
-	
-	&__balance-secondary-label {
-		font-size: $font-size-sm;
-		font-weight: 300;
-	}
-	
-	&__balance-secondary-title {
-		font-weight: 300;
-	}
+	// &__balance-area {
+	// 	width: 80%;
+	// 	margin: 0 auto;
+	// 	border-radius: 10px;
+	// 	padding: 1em;
+	// 	background-color: #fff;
+	// 	color: $c-black;
+	// 	position: absolute;
+	// 	bottom: -8em;
+	// 	left: 0;
+	// 	right: 0;
+	// }
+	// 
+	// &__balance-current-label {
+	// 	text-align: center;
+	// 	font-size: $font-size-sm;
+	// 	font-weight: 300;
+	// }
+	// 
+	// &__balance-current-title {
+	// 	text-align: center;
+	// 	font-size: $font-size-xl;
+	// 	font-weight: 300;
+	// }
+	// 
+	// &__balance-secondary {
+	// 	display: flex;
+	// 	justify-content: space-around;
+	// 	
+	// 	@media(min-width: 768px) {
+	// 		justify-content: center;
+	// 		gap: 4em;
+	// 	}
+	// }
+	// 
+	// &__balance-secondary-label {
+	// 	font-size: $font-size-sm;
+	// 	font-weight: 300;
+	// }
+	// 
+	// &__balance-secondary-title {
+	// 	font-weight: 300;
+	// }
 }
