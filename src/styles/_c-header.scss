@@ -11,24 +11,41 @@
 	}
 	
 	&__balance-area {
-		width: 90%;
+		width: 80%;
 		margin: 0 auto;
+		border-radius: 10px;
 		padding: 1em;
 		background-color: #fff;
 		color: $c-black;
 		position: absolute;
-		bottom: -3em;
+		bottom: -8em;
 		left: 0;
 		right: 0;
 	}
 	
-	&__balance-current-title {
+	&__balance-current-label {
 		text-align: center;
-		font-size: 14px;
+		font-size: $font-size-sm;
+		font-weight: 300;
 	}
 	
-	&__balance-current {
+	&__balance-current-title {
 		text-align: center;
-		font-size: 30px;
+		font-size: $font-size-xl;
+		font-weight: 300;
+	}
+	
+	&__balance-secondary {
+		display: flex;
+		justify-content: space-around;
+	}
+	
+	&__balance-secondary-label {
+		font-size: $font-size-sm;
+		font-weight: 300;
+	}
+	
+	&__balance-secondary-title {
+		font-weight: 300;
 	}
 }
